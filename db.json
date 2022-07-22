@@ -1,19 +1,9 @@
 {
-  "posts": [
+  "categories": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "name": "Familes",
+      "image": "https://dfilitto.com.br/wp-content/uploads/2020/03/logo-menor.png"
     }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
