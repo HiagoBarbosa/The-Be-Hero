@@ -1,14 +1,16 @@
-# REST API ENGLISH FOR KIDS
+# the_be_hero
 
-API FAKE criada para uso em projetos que tem como objetivo utilizar dados oriundos de fonte de dados externas, como banco de dados remotos. 
+A new Flutter project.
 
-## Recursos utilizados no projeto
-- Node.js
-- Javascript
-- [Json-Server](https://github.com/typicode/json-server)
-- [Heroku](https://www.heroku.com/)
+## Getting Started
 
-## Como criar uma REST API FAKE
-Para aprender a criar a sua própria REST API FAKE basta acessar os seguintes endereços:
-- [CRIANDO UM REST API COM JSON SERVER](https://dfilitto.com.br/desenvolvimento/criando-um-rest-api-com-json-server/)
-- [Como criar uma REST API com o Json-Server e hospedá-la no Heroku](https://www.youtube.com/playlist?list=PLfvOpw8k80Wp957CoerNv8ZM7S7PTKVEp)
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
