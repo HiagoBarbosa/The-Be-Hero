@@ -29,6 +29,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  postgres:
+  build_runner:
+  build_web_compilers:
+  pedantic:
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -38,7 +42,13 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
+  carousel_slider: "^4.1.1"
+  sqflite:
+  path:
+  http:
+  args:
+  shelf:
+  shelf_static:
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
@@ -58,9 +68,13 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/logo.png
+    - assets/bone.png
+    - assets/logo1.png
+    - assets/logo@2x.png
+    - assets/logo@3x.png
+    - assets/profile-picture.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
