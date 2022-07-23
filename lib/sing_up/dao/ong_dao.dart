@@ -7,21 +7,21 @@ class OngDAO {
   OngDAO(this.database);
 
   Future<void> inserir (Ongs ongs) async {
-    await database.insert("tb_ongs", ongs.toMap(),
+    await database.insert("tb_ong", ongs.toMap(),
       conflictAlgorithm: ConflictAlgorithm.replace,
     );
   }
 
   Future<List<Ongs>> obterTodos() async {
-    final List<Map<String, dynamic>> maps = await database.query("tb_ongs");
+    final List<Map<String, dynamic>> maps = await database.query("tb_ong");
     return Ongs.fromMaps(maps);
   }
 
   Future<Ongs?> obterPorId(int id) async {
     final List<Map<String, dynamic>> maps =
         await database.query(
-          "tb_ongs",
-          where: "id_ongs = ?",
+          "tb_ong",
+          where: "id_ong = ?",
           whereArgs: [id]
         );
     if(maps.length > 0) {
@@ -32,17 +32,17 @@ class OngDAO {
 
   Future<void> atualizar (Ongs ongs) async{
     await database.update(
-      'tb_ongs',
+      'tb_ong',
       ongs.toMap(),
-      where: "id_ongs = ?",
+      where: "id_ong = ?",
       whereArgs: [ongs.id],
     );
   }
 
   Future<void> remover(int id) async{
     await database.delete(
-      'tb_ongs',
-      where: "id_ongs = ?",
+      'tb_ong',
+      where: "id_ong = ?",
       whereArgs: [id],
     );
   }

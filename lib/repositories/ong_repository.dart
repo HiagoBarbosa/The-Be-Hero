@@ -1,5 +1,6 @@
-import 'package:the_be_hero/helper/ong_rest.dart';
 import 'package:the_be_hero/sing_up/ongs.model.dart';
+
+import '../helper/ong_rest.dart';
 
 class OngRepository {
   final OngRest api= OngRest();
