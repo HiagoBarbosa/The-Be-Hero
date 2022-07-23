@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e4758e1-ed65-4262-b4e2-68f8a9a7b02a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/controllers/ong.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/database/models/ong.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/database/sequilize.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/bin/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/repositories/ong_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/repositories/ong_repository.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sing_up/dao/ong_dao.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sing_up/dao/ong_dao.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/bin/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/bin/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/ong.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/ong.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
