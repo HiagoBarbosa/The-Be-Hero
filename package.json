@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/dfilitto/restapienglishforkids#readme",
   "dependencies": {
-    "json-server": "^0.16.3"
+    "json-server": "^0.16.3",
+    "pg": "^8.7.3",
+    "sequelize": "^6.21.3"
   }
 }
