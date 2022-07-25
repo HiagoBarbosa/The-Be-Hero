@@ -4,7 +4,7 @@
   "description": "rest api english for kids",
   "main": "server.js",
   "scripts": {
-    "start": "node ./bin/server.js",
+    "start": "node ./backend/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
