@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:the_be_hero/caso/page/editar.caso.page.dart';
 import 'package:the_be_hero/home/home.page.dart';
 import 'package:the_be_hero/login/login.page.dart';
 import 'package:the_be_hero/routes/routes.dart';
@@ -33,6 +34,7 @@ class MyApp extends StatelessWidget {
         AppRoutes.SING_UP_VOLUNTARIO: (_) => const SingUpPageVoluntario(),
         AppRoutes.listaCasoDeOng: (context) => LitarCasosOng(),
         AppRoutes.inserirCasoOng: (context) => InserirCasoOng(),
+        AppRoutes.editarCasoOng: (context) => EditarCasoOngPage()
       },
     );
   }
