@@ -1,9 +1,6 @@
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 
-
-
-
 class ConnectionFactory {
   final int _version = 1;
   final String _databaseFile = "database.db";

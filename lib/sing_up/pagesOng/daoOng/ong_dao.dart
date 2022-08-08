@@ -1,5 +1,6 @@
 import 'package:sqflite/sqflite.dart';
-import 'package:the_be_hero/sing_up/ongs.model.dart';
+import 'package:the_be_hero/sing_up/pagesOng/modelsOng/ong.model.dart';
+
 
 class OngDAO {
   late Database database;
@@ -7,13 +8,13 @@ class OngDAO {
   OngDAO(this.database);
 
   Future<void> inserir (Ongs ongs) async {
-    await database.insert("tb_ong", ongs.toMap(),
+    await database.insert("tb_ongs", ongs.toMap(),
       conflictAlgorithm: ConflictAlgorithm.replace,
     );
   }
 
   Future<List<Ongs>> obterTodos() async {
-    final List<Map<String, dynamic>> maps = await database.query("tb_ong");
+    final List<Map<String, dynamic>> maps = await database.query("tb_ongs");
     return Ongs.fromMaps(maps);
   }
 
@@ -32,7 +33,7 @@ class OngDAO {
 
   Future<void> atualizar (Ongs ongs) async{
     await database.update(
-      'tb_ong',
+      'tb_ongs',
       ongs.toMap(),
       where: "id_ong = ?",
       whereArgs: [ongs.id],

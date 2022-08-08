@@ -1,3 +1,3 @@
 class API {
-  static final String endpoint = "127.0.0.1:3360";
+  static final String endpoint = "http://localhost:3000";
 }

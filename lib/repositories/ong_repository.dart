@@ -1,6 +1,6 @@
-import 'package:the_be_hero/sing_up/ongs.model.dart';
 
 import '../helper/ong_rest.dart';
+import '../sing_up/pagesOng/modelsOng/ong.model.dart';
 
 class OngRepository {
   final OngRest api= OngRest();
@@ -8,7 +8,7 @@ class OngRepository {
     return await api.buscar(id);
   }
 
-  Future<List<Ongs>> buscarTodos() async{
+  Future<List> buscarTodos() async{
     return await api.buscarTodos();
   }
   Future<Ongs> inserir(Ongs ong) async{

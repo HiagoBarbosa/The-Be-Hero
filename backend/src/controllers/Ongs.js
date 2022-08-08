@@ -1,4 +1,7 @@
-const Ong = require("../database/models/db")
+const Ong = require("../database/models/db");
+const sequelize = require("../sequelize");
+
+const users = sequelize.query("SELECT * FROM `tb_ongs`", { type: QueryTypes.SELECT });
 
 const Ongs = 
 {
@@ -11,12 +14,14 @@ const Ongs =
 
     //precisa ajustar os parametros
     create(req, res, next) {
-        const { brand, model, hp } = req.body;
+        const { cnpj, nomeOng, telefone, endereco, descricao } = req.body;
     
         Ong.create({
-          brand,
-          model,
-          hp,
+          cnpj,
+          nomeOng,
+          telefone,
+          endereco,
+          descricao
         })
           .then((result) => {
             res.status(201).json(result); //return with ID -> 201 (CREATED)
@@ -25,7 +30,7 @@ const Ongs =
       },
 };
 
-module.exports = Ongs;
+module.exports = users;
 
 
 // const Ongs = {

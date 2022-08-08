@@ -1,6 +1,6 @@
 import 'package:the_be_hero/rest/api.dart';
 
-import '../sing_up/ongs.model.dart';
+import '../sing_up/pagesOng/modelsOng/ong.model.dart';
 import'package:http/http.dart' as http;
 
 class OngRest{
@@ -29,13 +29,17 @@ class OngRest{
   }
 
   Future<Ongs> inserir(Ongs ong) async{
-    final http.Response response = await http.post(Uri.http(API.endpoint, 'ong'),
+    print(ong);
+    final http.Response response = await http.post(Uri.http(API.endpoint, '/ong'),
     headers: <String, String>{
-      'Content-Type': 'application/json; charset=UTF-8',
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*',
+      'Connection': 'keep-alive'
     },
       body: ong.toJson()
-    );
 
+    );
+    print(response.statusCode);
     if(response.statusCode == 201) {
       return Ongs.fromJson(response.body);
     }else{

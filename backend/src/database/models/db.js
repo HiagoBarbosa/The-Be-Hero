@@ -1,7 +1,12 @@
-const {DataTypes} = require("sequelize");
+const {DataTypes, Sequelize} = require("sequelize");
 const sequelize = require("../sequelize");
+const {QueryTypes} = require('sequelize');
+
 
 //alterar pasta arquivo para db.js
+
+const users = sequelize.query("SELECT * FROM tb_ongs", { type: QueryTypes.SELECT });
+
 
 const Genero = sequelize.define("tb_generos",{
     id_sexo: {
@@ -242,3 +247,4 @@ module.exports= Especie;
 module.exports = Casos;
 module.exports = Ong;
 module.exports = Voluntario;
+module.exports = users;

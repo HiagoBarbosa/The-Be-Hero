@@ -1,12 +1,10 @@
-
 import 'package:flutter/material.dart';
 import 'package:the_be_hero/menu/menu.component.dart';
 
 import '../routes/routes.dart';
 
-
 class LoginPage extends StatefulWidget {
-  const LoginPage ({Key? key}) : super(key: key);
+  const LoginPage({Key? key}) : super(key: key);
 
   @override
   State<StatefulWidget> createState() => _LoginPageState();
@@ -18,7 +16,7 @@ class _LoginPageState extends State<LoginPage> {
   final _senhaController = TextEditingController();
 
   @override
-  void dispose(){
+  void dispose() {
     _emailController.dispose();
     _senhaController.dispose();
     super.dispose();
@@ -30,89 +28,86 @@ class _LoginPageState extends State<LoginPage> {
       appBar: AppBar(
         title: const Text('Login'),
         actions: [
-          IconButton(onPressed: () async {
-            await Navigator.pushNamed(context, AppRoutes.LOGIN);
-          }, icon: const Icon(Icons.account_circle_sharp))
+          IconButton(
+              onPressed: () async {
+                await Navigator.pushNamed(context, AppRoutes.LOGIN);
+              },
+              icon: const Icon(Icons.account_circle_sharp))
         ],
       ),
       drawer: const Menu(),
-
       body: Container(
         padding: EdgeInsets.only(top: 60, left: 40, right: 40),
         color: Colors.white,
         child: ListView(
-          children: <Widget> [
+          children: <Widget>[
             SizedBox(
-              width: 128,
-              height: 128,
-              child: Image.asset("assets/logo.png")
+                width: 128, height: 128, child: Image.asset("assets/logo.png")),
+            SizedBox(
+              height: 20,
             ),
-        SizedBox(
-          height: 20,
-        ),
-        Form(
-            key: _formKeyLogin,
-            child: Column(
-            children: [
-              TextFormField(
-                autofocus: true,
-                controller: _emailController,
-                keyboardType: TextInputType.emailAddress,
-                decoration: InputDecoration(
-                  labelText: "E-mail",
-                  labelStyle: TextStyle(
-                    color: Colors.black38,
-                    fontWeight: FontWeight.w400,
-                    fontSize: 20,
-                  ),
-                ),
-                style: TextStyle(fontSize: 20),
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              TextFormField(
-                // autofocus: true,
-                controller: _senhaController,
-                keyboardType: TextInputType.text,
-                obscureText: true,
-                decoration: InputDecoration(
-                  labelText: "Senha",
-                  labelStyle: TextStyle(
-                    color: Colors.black38,
-                    fontWeight: FontWeight.w400,
-                    fontSize: 20,
-                  ),
-                ),
-                style: TextStyle(fontSize: 20),
-              ),
-              SizedBox(
-                height: 40,
-              ),
-              // Container(
-              //   height: 40,
-              //   alignment: Alignment.centerRight,
-              //   child: FlatButton(
-              //     child: Text(
-              //       "Recuperar Senha",
-              //       textAlign: TextAlign.right,
-              //     ),
-              //     onPressed: () {
-              //       Navigator.push(
-              //         context,
-              //         MaterialPageRoute(
-              //           builder: (context) => ResetPasswordPage(),
-              //         ),
-              //       );
-              //     },
-              //   ),
-              // ),
-              // SizedBox(
-              //   height: 40,
-              // ),
-            ],
-        )
-        ),
+            Form(
+                key: _formKeyLogin,
+                child: Column(
+                  children: [
+                    TextFormField(
+                      autofocus: true,
+                      controller: _emailController,
+                      keyboardType: TextInputType.emailAddress,
+                      decoration: InputDecoration(
+                        labelText: "E-mail",
+                        labelStyle: TextStyle(
+                          color: Colors.black38,
+                          fontWeight: FontWeight.w400,
+                          fontSize: 20,
+                        ),
+                      ),
+                      style: TextStyle(fontSize: 20),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    TextFormField(
+                      // autofocus: true,
+                      controller: _senhaController,
+                      keyboardType: TextInputType.text,
+                      obscureText: true,
+                      decoration: InputDecoration(
+                        labelText: "Senha",
+                        labelStyle: TextStyle(
+                          color: Colors.black38,
+                          fontWeight: FontWeight.w400,
+                          fontSize: 20,
+                        ),
+                      ),
+                      style: TextStyle(fontSize: 20),
+                    ),
+                    SizedBox(
+                      height: 40,
+                    ),
+                    // Container(
+                    //   height: 40,
+                    //   alignment: Alignment.centerRight,
+                    //   child: FlatButton(
+                    //     child: Text(
+                    //       "Recuperar Senha",
+                    //       textAlign: TextAlign.right,
+                    //     ),
+                    //     onPressed: () {
+                    //       Navigator.push(
+                    //         context,
+                    //         MaterialPageRoute(
+                    //           builder: (context) => ResetPasswordPage(),
+                    //         ),
+                    //       );
+                    //     },
+                    //   ),
+                    // ),
+                    // SizedBox(
+                    //   height: 40,
+                    // ),
+                  ],
+                )),
             Container(
               height: 60,
               alignment: Alignment.centerLeft,
@@ -172,8 +167,9 @@ class _LoginPageState extends State<LoginPage> {
                   "Cadastre-se",
                   textAlign: TextAlign.center,
                 ),
-                onPressed: ()async {
-                  await Navigator.pushNamed(context, AppRoutes.SING_UP);
+                onPressed: () async {
+                  await Navigator.pushNamed(
+                      context, AppRoutes.SING_UP_ONG_OR_VOLUNTARIO);
                 },
               ),
             ),
@@ -183,37 +179,36 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
-void _login() async {
-    if(_validateDescription()){
+  void _login() async {
+    if (_validateDescription()) {
       // try {
       //
       // }
     }
-}
-
-bool _validateDescription(){
-  if(_formKeyLogin.currentState!.validate() &&
-      _emailController.text.isEmpty &&
-      _senhaController.text.isEmpty
-  ){
-    showDialog(
-        context: context,
-        builder: (BuildContext context) {
-          return AlertDialog(
-            title: const Text("Alerta!"),
-            content: const Text("Verifique se os campos foram preenchidos corretamente e por favor tente novamente!"),
-            actions: [
-              TextButton(
-                  onPressed: (){
-                      Navigator.pop(context);
-              }, child: const Text("Ok!")
-              )
-            ],
-          );
-        }
-    );
-    return false;
   }
-  return true;
-}
+
+  bool _validateDescription() {
+    if (_formKeyLogin.currentState!.validate() &&
+        _emailController.text.isEmpty &&
+        _senhaController.text.isEmpty) {
+      showDialog(
+          context: context,
+          builder: (BuildContext context) {
+            return AlertDialog(
+              title: const Text("Alerta!"),
+              content: const Text(
+                  "Verifique se os campos foram preenchidos corretamente e por favor tente novamente!"),
+              actions: [
+                TextButton(
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    child: const Text("Ok!"))
+              ],
+            );
+          });
+      return false;
+    }
+    return true;
+  }
 }

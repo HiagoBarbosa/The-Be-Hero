@@ -34,7 +34,15 @@ class Menu extends StatelessWidget{
             title: const Text('Casos'),
             onTap: () {
               Navigator.pop(context);
-              Navigator.pushNamed(context, AppRoutes.HOME);
+              Navigator.pushNamed(context, AppRoutes.listaCasoDeOng);
+            },
+          ),
+
+          ListTile(
+            title: const Text('cadastro de Casos'),
+            onTap: () {
+              Navigator.pop(context);
+              Navigator.pushNamed(context, AppRoutes.inserirCasoOng);
             },
           ),
           ListTile(
