@@ -53,7 +53,7 @@ class _EditarCasoOngPageState extends State<EditarCasoOngPage> {
     this._caso!.raca = _recaCasoController.text;
     this._caso!.especie = _especieCasoController.text;
     this._caso!.dta_recolhimento =
-        int.parse(_dtaRecolhidoCadoController.text) as String;
+        _dtaRecolhidoCadoController.text;
     this._caso!.descricao = _descricaoCasoController.text;
     this._caso!.image = _imageCasoController.text;
 
