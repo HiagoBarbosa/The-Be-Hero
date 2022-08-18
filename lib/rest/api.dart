@@ -1,3 +1,3 @@
 class API {
-  static final String endpoint = "http://localhost:3000";
+  static final String endpoint = "https://the-be-hero.herokuapp.com";
 }

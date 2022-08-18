@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:the_be_hero/dao/casoOng/connectionCasoOng_factory.dart';
 import 'package:the_be_hero/menu/menu.component.dart';
 import 'package:sqflite/sqflite.dart';
+import 'package:the_be_hero/repositories/CasoRepository.dart';
 
 
 import '../../dao/casoOng/casoOng_dao.dart';
@@ -40,14 +41,24 @@ class _LitarCasosOngState extends State<LitarCasosOng>{
   }
 
   Future<List<Caso>> _obterTodos() async{
-      Database db = await ConnectionCasoOngFactory.factory.database;
-      casoOngDao dao = casoOngDao(db);
-
-      List<Caso> tempLista = await dao.obterTodos();
-
-      ConnectionCasoOngFactory.factory.close();
-
-      return tempLista;
+    List<Caso> tempLista = <Caso>[];
+    try{
+      CasoRepository repository = CasoRepository();
+      tempLista = await repository.buscarTodos();
+    }
+    catch(exception){
+      ScaffoldMessenger.of(context)
+          .showSnackBar(SnackBar(content: Text('errorrrrr')));
+    }
+    return tempLista;
+      // Database db = await ConnectionCasoOngFactory.factory.database;
+      // casoOngDao dao = casoOngDao(db);
+      //
+      // List<Caso> tempLista = await dao.obterTodos();
+      //
+      // ConnectionCasoOngFactory.factory.close();
+      //
+      // return tempLista;
   }
 
   void _removerCaso(int id) async {
@@ -128,7 +139,7 @@ class _LitarCasosOngState extends State<LitarCasosOng>{
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: AppBar(
-        title: Text("Listagem dee casos"),
+        title: Text("Listagem de casos"),
       ),
       drawer: const Menu(),
       body: ListView.builder(itemBuilder: _buildItem, itemCount: _lista.length,),

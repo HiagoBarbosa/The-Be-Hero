@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 class Caso{
   int? id;
   String nome;
@@ -28,25 +30,25 @@ class Caso{
 
   Map<String, dynamic> toMap(){
     return {
-      'caso_id': this.id,
-      'caso_nome': this.nome,
-      'caso_raca': this.raca,
-      'caso_especie': this.especie,
-      'caso_dta_recolhimento': this.dta_recolhimento,
-      'caso_descricao': this.descricao,
-      'caso_image': this.image
+      "id": this.id,
+      "nome": this.nome,
+      "raca": this.raca,
+      "especie": this.especie,
+      "dta_recolhimento": this.dta_recolhimento,
+      "descricao": this.descricao,
+      "image": this.image
     };
   }
 
   static Caso fromMap(Map<String, dynamic> map){
     return Caso(
-      map['caso_id'],
-      map['caso_nome'],
-      map['caso_raca'],
-      map['caso_especie'],
-      map['caso_dta_recolhimento'],
-      map['caso_descricao'],
-      map['caso_image'],
+      map['id'],
+      map['nome'],
+      map['raca'],
+      map['especie'],
+      map['dta_recolhimento'],
+      map['descricao'],
+      map['image'],
     );
   }
 
@@ -55,4 +57,11 @@ class Caso{
       return Caso.fromMap(maps[i]);
     });
   }
+
+  static Caso fromJson(String j) => Caso.fromMap(jsonDecode(j));
+  static List<Caso>fromJsonList(String j){
+    final parsed = jsonDecode(j).cast<Map<String, dynamic>>();
+    return parsed.map<Caso>((map)=>Caso.fromMap(map)).toList();
+  }
+  String toJson()=> jsonEncode(toMap());
 }

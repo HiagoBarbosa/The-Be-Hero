@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:the_be_hero/repositories/ong_repository.dart';
+
 import 'package:the_be_hero/routes/routes.dart';
 import 'package:the_be_hero/sing_up/pagesOng/daoOng/connection_factory.dart';
 import 'package:the_be_hero/sing_up/pagesOng/daoOng/ong_dao.dart';
@@ -521,10 +521,10 @@ class _SingUpPageOng extends State<SingUpPageOng> {
     // ConnectionFactory.factory.close();
 
      try{
-       OngRepository repository = OngRepository();
+      // OngRepository repository = OngRepository();
        print(_nomeOngController);
        print(_emailOngController);
-       await repository.inserir(ong);
+      // await repository.inserir(ong);
        print(ong);
 
       _nomeOngController.clear();

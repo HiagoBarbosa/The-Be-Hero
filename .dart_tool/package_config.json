@@ -3,13 +3,13 @@
   "packages": [
     {
       "name": "_fe_analyzer_shared",
-      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/_fe_analyzer_shared-43.0.0",
+      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/_fe_analyzer_shared-46.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
     {
       "name": "analyzer",
-      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/analyzer-4.3.1",
+      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/analyzer-4.6.0",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
@@ -183,7 +183,7 @@
     },
     {
       "name": "file",
-      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/file-6.1.2",
+      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/file-6.1.3",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -231,7 +231,7 @@
     },
     {
       "name": "http",
-      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.13.4",
+      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.13.5",
       "packageUri": "lib/",
       "languageVersion": "2.14"
     },
@@ -345,7 +345,7 @@
     },
     {
       "name": "pubspec_parse",
-      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/pubspec_parse-1.2.0",
+      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/pubspec_parse-1.2.1",
       "packageUri": "lib/",
       "languageVersion": "2.14"
     },
@@ -405,7 +405,7 @@
     },
     {
       "name": "sqflite",
-      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/sqflite-2.0.3",
+      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/sqflite-2.0.3+1",
       "packageUri": "lib/",
       "languageVersion": "2.16"
     },
@@ -506,7 +506,7 @@
       "languageVersion": "2.17"
     }
   ],
-  "generated": "2022-08-02T23:13:27.891696Z",
+  "generated": "2022-08-18T15:14:16.127474Z",
   "generator": "pub",
   "generatorVersion": "2.17.5"
 }
