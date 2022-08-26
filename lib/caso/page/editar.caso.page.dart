@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:the_be_hero/dao/casoOng/casoOng_dao.dart';
-import 'package:the_be_hero/dao/casoOng/connectionCasoOng_factory.dart';
 import 'package:the_be_hero/menu/menu.component.dart';
 import 'package:sqflite/sqflite.dart';
 
 import '../caso.model.dart';
 
 class EditarCasoOngPage extends StatefulWidget {
-  static const String routName = '/editarCasoDaOng';
+  static const String routeName = '/editarCasoDaOng';
 
   @override
   State<StatefulWidget> createState() => _EditarCasoOngPageState();
@@ -35,10 +33,6 @@ class _EditarCasoOngPageState extends State<EditarCasoOngPage> {
   }
 
   void _obterCaso() async {
-    Database db = await ConnectionCasoOngFactory.factory.database;
-    casoOngDao dao = casoOngDao(db);
-    this._caso = await dao.obterPorId(this._id);
-    ConnectionCasoOngFactory.factory.close();
 
     _nomeCasoController.text = this._caso!.nome;
     _recaCasoController.text = this._caso!.raca;
@@ -56,11 +50,6 @@ class _EditarCasoOngPageState extends State<EditarCasoOngPage> {
         _dtaRecolhidoCadoController.text;
     this._caso!.descricao = _descricaoCasoController.text;
     this._caso!.image = _imageCasoController.text;
-
-    Database db = await ConnectionCasoOngFactory.factory.database;
-    casoOngDao dao =casoOngDao(db);
-    await dao.atualizar(this._caso!);
-    ConnectionCasoOngFactory.factory.close();
 
     ScaffoldMessenger.of(context)
         .showSnackBar(SnackBar(content: Text('Ong editado com sucesso.')));

@@ -6,7 +6,7 @@ import 'package:the_be_hero/routes/routes.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage ({Key? key}) : super(key: key);
-
+  static const String routeName = '/home';
   @override
   State<StatefulWidget> createState() => _HomePageState();
 }
@@ -30,7 +30,7 @@ class _HomePageState extends State<HomePage> {
         title: const Text('Home'),
         actions: [
           IconButton(onPressed: ()async {
-            await Navigator.pushNamed(context, AppRoutes.LOGIN);
+            await Navigator.pushNamed(context, AppRoutes.login);
           }, icon: Icon(Icons.account_circle_sharp))
         ],
       ),

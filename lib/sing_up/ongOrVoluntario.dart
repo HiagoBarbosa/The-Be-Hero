@@ -6,7 +6,7 @@ import '../menu/menu.component.dart';
 
 class SingUpPageOngOrVoluntario extends StatefulWidget {
   const SingUpPageOngOrVoluntario({Key? key}) : super(key: key);
-
+  static const String routeName = '/singUpPageOngOrVoluntario';
   @override
   State<SingUpPageOngOrVoluntario> createState() =>
       _SingUpPageOngOrVoluntario();
@@ -22,7 +22,7 @@ class _SingUpPageOngOrVoluntario extends State<SingUpPageOngOrVoluntario> {
           actions: [
             IconButton(
                 onPressed: () async {
-                  await Navigator.pushNamed(context, AppRoutes.LOGIN);
+                  await Navigator.pushNamed(context, AppRoutes.login);
                 },
                 icon: const Icon(Icons.account_circle_sharp))
           ],
@@ -92,7 +92,7 @@ class _SingUpPageOngOrVoluntario extends State<SingUpPageOngOrVoluntario> {
                       ],
                     ),
                     onPressed: ()async {
-                      await Navigator.pushNamed(context, AppRoutes.SING_UP_ONG);
+                      await Navigator.pushNamed(context, AppRoutes.inserirOng);
                     },
                   ),
                 ),
@@ -143,7 +143,7 @@ class _SingUpPageOngOrVoluntario extends State<SingUpPageOngOrVoluntario> {
                       ],
                     ),
                     onPressed: ()async {
-                      await Navigator.pushNamed(context, AppRoutes.SING_UP_VOLUNTARIO);
+                      //await Navigator.pushNamed(context, AppRoutes.SING_UP_ONG);
                     },
                   ),
                 ),

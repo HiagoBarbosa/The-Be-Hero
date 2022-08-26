@@ -27,7 +27,7 @@ class Menu extends StatelessWidget{
             title: const Text('Home'),
             onTap: () {
               Navigator.pop(context);
-              Navigator.pushNamed(context, AppRoutes.HOME);
+              Navigator.pushNamed(context, AppRoutes.home);
             },
           ),
           ListTile(
@@ -49,14 +49,14 @@ class Menu extends StatelessWidget{
             title: const Text('Voluntarios'),
             onTap: () {
               Navigator.pop(context);
-              Navigator.pushNamed(context, AppRoutes.HOME);
+              Navigator.pushNamed(context, AppRoutes.home);
             },
           ),
           ListTile(
             title: const Text('Sobre nós'),
             onTap: () {
               Navigator.pop(context);
-              Navigator.pushNamed(context, AppRoutes.HOME);
+              Navigator.pushNamed(context, AppRoutes.home);
             },
           )
         ],

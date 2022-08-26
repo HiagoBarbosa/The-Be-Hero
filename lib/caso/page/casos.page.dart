@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:the_be_hero/dao/casoOng/connectionCasoOng_factory.dart';
 import 'package:the_be_hero/menu/menu.component.dart';
 import 'package:sqflite/sqflite.dart';
-import 'package:the_be_hero/repositories/CasoRepository.dart';
+import 'package:the_be_hero/repositories/caso/CasoRepository.dart';
 
 
-import '../../dao/casoOng/casoOng_dao.dart';
 import '../../routes/routes.dart';
 import '../caso.model.dart';
 
@@ -61,13 +59,13 @@ class _LitarCasosOngState extends State<LitarCasosOng>{
       // return tempLista;
   }
 
-  void _removerCaso(int id) async {
-    Database db = await ConnectionCasoOngFactory.factory.database;
-    casoOngDao dao = casoOngDao(db);
-    await dao.remover(id);
+  //void _removerCaso(int id) async {
+   // Database db = await ConnectionCasoOngFactory.factory.database;
+   // casoOngDao dao = casoOngDao(db);
+   // await dao.remover(id);
 
-    ConnectionCasoOngFactory.factory.close();
-  }
+    //ConnectionCasoOngFactory.factory.close();
+  //}
 
   void _showItem(BuildContext context, int index){
     ///vai ter uma pagina so para lista o caso especifico
@@ -90,7 +88,7 @@ class _LitarCasosOngState extends State<LitarCasosOng>{
       actions: [
         TextButton(onPressed: () {Navigator.of(context).pop();}, child: Text("Não")),
         TextButton(onPressed: () {
-          _removerCaso(c.id!);
+          //_removerCaso(c.id!);
           _refreshList();
           Navigator.of(context).pop();
         }, child: Text("Sim"))

@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:the_be_hero/dao/casoOng/connectionCasoOng_factory.dart';
 import 'package:the_be_hero/menu/menu.component.dart';
-import 'package:sqflite/sqflite.dart';
-import 'package:the_be_hero/repositories/CasoRepository.dart';
+import 'package:the_be_hero/repositories/caso/CasoRepository.dart';
 
-import '../../dao/casoOng/casoOng_dao.dart';
 import '../caso.model.dart';
 
 class InserirCasoOng extends StatefulWidget {
@@ -35,14 +32,10 @@ class _InserirCasoOngState extends State<InserirCasoOng> {
   }
 
   void _salvar() async {
-    //Database db = await ConnectionCasoOngFactory.factory.database;
-    //casoOngDao dao = casoOngDao(db);
 
     Caso caso = Caso.novo(_nomeCasoController.text, _recaCasoController.text, _especieCasoController.text,
       _dtaRecolhidoCadoController.text,_descricaoCasoController.text, _imageCasoController.text);
 
-    //await dao.inserir(caso);
-    //ConnectionCasoOngFactory.factory.close();
 try{
   CasoRepository repository = CasoRepository();
   await repository.inserir(caso);
@@ -158,6 +151,7 @@ try{
                     child:Column(
                     children: [
                       TextFormField(
+                        keyboardType: TextInputType.datetime,
                         controller: _dtaRecolhidoCadoController,
                         validator: (value){
                           if(value!.isEmpty){
@@ -302,7 +296,7 @@ try{
 
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
+    return Scaffold(
       appBar: AppBar(
         title: Text("inserir caso ong"),
       ),

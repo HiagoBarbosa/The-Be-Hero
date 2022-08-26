@@ -8,46 +8,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e4758e1-ed65-4262-b4e2-68f8a9a7b02a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/repositories/CasoRepository.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/repositories/ong/OngRepository.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/rest/ong/ong_rest.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/sing_up/ong/ong.model.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/sing_up/ong/page/ong.page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/f387e1459642e05338f16dd22776474f/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/f387e1459642e05338f16dd22776474f/.filecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/f387e1459642e05338f16dd22776474f/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/f387e1459642e05338f16dd22776474f/app.dill" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/f387e1459642e05338f16dd22776474f/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/f387e1459642e05338f16dd22776474f/kernel_snapshot.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/f387e1459642e05338f16dd22776474f/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/f387e1459642e05338f16dd22776474f/kernel_snapshot.stamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config_subset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/controllers/Ongs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/database/models/db.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/database/sequelize.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/routes.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/4f2a58af27abc49ecf55570043bbf938.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/build/4f2a58af27abc49ecf55570043bbf938.cache.dill.track.dill" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/assets/debug/mergeDebugAssets/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/assets/debug/mergeDebugAssets/flutter_assets/kernel_blob.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/compressed_assets/debug/out/assets/flutter_assets/kernel_blob.bin.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/compressed_assets/debug/out/assets/flutter_assets/kernel_blob.bin.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/kernel_blob.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_build.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_build.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJavaRes/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJavaRes/merge-state" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJavaRes/zip-cache/4UihpSMlLZE4qDtPES5agzIcedA=" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJavaRes/zip-cache/4UihpSMlLZE4qDtPES5agzIcedA=" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/kotlin/compileDebugKotlin/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/kotlin/compileDebugKotlin/build-history.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/kotlin/compileDebugKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/kotlin/compileDebugKotlin/last-build.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/apk/debug/app-debug.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app-debug.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk.sha1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/caso/caso.model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/caso/caso.model.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/caso/page/caso.page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/caso/page/caso.page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/caso/page/casos.page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/caso/page/casos.page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/repositories/ong_repository.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/rest/api.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/rest/api.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/rest/ong/ong_rest.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/rest/caso/caso_rest.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sing_up/pagesOng/sign_up.pageOng.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sing_up/pagesOng/sign_up.pageOng.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/caso/page/editar.caso.page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/caso/page/editar.caso.page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/dao/Novo Documento RTF.rtf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/dao/casoOng/casoOng_dao.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/dao/casoOng/connectionCasoOng_factory.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/helper/error.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/helper/ong_rest.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/home/home.page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home/home.page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/login/login.page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login/login.page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/menu/menu.component.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/menu/menu.component.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/repositories/CasoRepository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/repositories/caso/CasoRepository.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/rest/caso/caso_rest.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/rest/caso/caso_rest.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/routes/routes.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routes/routes.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sing_up/ongOrVoluntario.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sing_up/ongOrVoluntario.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sing_up/pagesOng/daoOng/connection_factory.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sing_up/pagesOng/daoOng/ong_dao.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sing_up/pagesOng/modelsOng/ong.model.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sing_up/pagesOng/sign_up.pageOng.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sing_up/pagesVoluntario/modelsVoluntario/voluntario.model.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sing_up/pagesVoluntario/sign_up.pagesVoluntario.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/widget_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/widget_test.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,11 +100,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hiaau\Documents\the_be_hero\lib\sing_up" />
+      <recent name="C:\Users\hiaau\Documents\the_be_hero\lib\repositories\caso" />
       <recent name="C:\Users\hiaau\Documents\the_be_hero\lib\caso\page" />
       <recent name="C:\Users\hiaau\Documents\the_be_hero\lib\sing_up\pagesVoluntario\modelsVoluntario" />
       <recent name="C:\Users\hiaau\Documents\the_be_hero\lib\sing_up\pagesOng\modelsOngs" />
-      <recent name="C:\Users\hiaau\Documents\the_be_hero\backend" />
-      <recent name="C:\Users\hiaau\Documents\the_be_hero" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -147,12 +154,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/lib/helper/ong_rest.dart</url>
-          <line>30</line>
+          <line>28</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/lib/helper/ong_rest.dart</url>
-          <line>32</line>
+          <line>30</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
@@ -162,148 +169,63 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/lib/helper/ong_rest.dart</url>
-          <line>42</line>
+          <line>40</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/lib/helper/ong_rest.dart</url>
-          <line>45</line>
+          <line>43</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/lib/helper/ong_rest.dart</url>
-          <line>34</line>
+          <line>32</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/lib/helper/ong_rest.dart</url>
-          <line>40</line>
+          <line>38</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/lib/helper/ong_rest.dart</url>
-          <line>38</line>
+          <line>36</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/lib/helper/ong_rest.dart</url>
-          <line>41</line>
+          <line>39</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/lib/helper/ong_rest.dart</url>
-          <line>35</line>
+          <line>33</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/lib/helper/ong_rest.dart</url>
-          <line>37</line>
+          <line>35</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/lib/helper/ong_rest.dart</url>
-          <line>36</line>
+          <line>34</line>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/lib/helper/ong_rest.dart</url>
-          <line>43</line>
+          <line>41</line>
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/lib/helper/ong_rest.dart</url>
-          <line>44</line>
+          <line>42</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/lib/helper/ong_rest.dart</url>
-          <line>39</line>
+          <line>37</line>
           <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/caso/page/casos.page.dart</url>
-          <line>128</line>
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/caso/page/casos.page.dart</url>
-          <line>76</line>
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/caso/page/casos.page.dart</url>
-          <line>79</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/caso/page/casos.page.dart</url>
-          <line>80</line>
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/routes/routes.dart</url>
-          <line>15</line>
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/caso/page/editar.caso.page.dart</url>
-          <line>174</line>
-          <option name="timeStamp" value="50" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/caso/page/editar.caso.page.dart</url>
-          <line>173</line>
-          <option name="timeStamp" value="51" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/caso/page/editar.caso.page.dart</url>
-          <line>172</line>
-          <option name="timeStamp" value="52" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/caso/page/editar.caso.page.dart</url>
-          <line>15</line>
-          <option name="timeStamp" value="69" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/caso/page/editar.caso.page.dart</url>
-          <line>69</line>
-          <option name="timeStamp" value="70" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/main.dart</url>
-          <line>36</line>
-          <option name="timeStamp" value="71" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/caso/page/casos.page.dart</url>
-          <line>46</line>
-          <option name="timeStamp" value="90" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/caso/caso.model.dart</url>
-          <line>63</line>
-          <option name="timeStamp" value="100" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/caso/caso.model.dart</url>
-          <line>65</line>
-          <option name="timeStamp" value="101" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/caso/caso.model.dart</url>
-          <line>62</line>
-          <option name="timeStamp" value="118" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/caso/caso.model.dart</url>
-          <line>61</line>
-          <option name="timeStamp" value="119" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/caso/caso.model.dart</url>
-          <line>60</line>
-          <option name="timeStamp" value="120" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

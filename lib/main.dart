@@ -3,12 +3,11 @@ import 'package:the_be_hero/caso/page/editar.caso.page.dart';
 import 'package:the_be_hero/home/home.page.dart';
 import 'package:the_be_hero/login/login.page.dart';
 import 'package:the_be_hero/routes/routes.dart';
+import 'package:the_be_hero/sing_up/ong/page/ong.page.dart';
 import 'package:the_be_hero/sing_up/ongOrVoluntario.dart';
-import 'package:the_be_hero/sing_up/pagesOng/sign_up.pageOng.dart';
 
 import 'caso/page/caso.page.dart';
 import 'caso/page/casos.page.dart';
-import 'sing_up/pagesVoluntario/sign_up.pagesVoluntario.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,13 +24,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      initialRoute: AppRoutes.HOME,
+      initialRoute: AppRoutes.home,
       routes: {
-        AppRoutes.HOME: (_) => const HomePage(),
-        AppRoutes.LOGIN: (_) => const LoginPage(),
-        AppRoutes.SING_UP_ONG_OR_VOLUNTARIO:(_) => const SingUpPageOngOrVoluntario(),
-        AppRoutes.SING_UP_ONG: (_) => const SingUpPageOng(),
-        AppRoutes.SING_UP_VOLUNTARIO: (_) => const SingUpPageVoluntario(),
+        AppRoutes.home: (_) => HomePage(),
+        AppRoutes.login: (context) => LoginPage(),
+        AppRoutes.singUpPageOngOrVoluntario: (context) => SingUpPageOngOrVoluntario(),
+        AppRoutes.inserirOng: (context) => InserirOng(),
         AppRoutes.listaCasoDeOng: (context) => LitarCasosOng(),
         AppRoutes.inserirCasoOng: (context) => InserirCasoOng(),
         AppRoutes.editarCasoOng: (context) => EditarCasoOngPage()

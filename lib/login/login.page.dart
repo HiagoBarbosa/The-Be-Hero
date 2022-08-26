@@ -5,7 +5,7 @@ import '../routes/routes.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
-
+  static const String routeName = '/login';
   @override
   State<StatefulWidget> createState() => _LoginPageState();
 }
@@ -30,7 +30,7 @@ class _LoginPageState extends State<LoginPage> {
         actions: [
           IconButton(
               onPressed: () async {
-                await Navigator.pushNamed(context, AppRoutes.LOGIN);
+                await Navigator.pushNamed(context, AppRoutes.login);
               },
               icon: const Icon(Icons.account_circle_sharp))
         ],
@@ -169,7 +169,7 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 onPressed: () async {
                   await Navigator.pushNamed(
-                      context, AppRoutes.SING_UP_ONG_OR_VOLUNTARIO);
+                      context, AppRoutes.singUpPageOngOrVoluntario);
                 },
               ),
             ),
