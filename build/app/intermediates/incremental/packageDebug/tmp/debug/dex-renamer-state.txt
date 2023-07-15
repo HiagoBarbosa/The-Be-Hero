@@ -1,4 +1,4 @@
-#Thu Aug 25 23:54:07 BRT 2022
+#Fri Jul 14 21:05:26 BRT 2023
 base.0=C\:\\Users\\hiaau\\Documents\\the-be-hero\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
-renamed.0=classes.dex
 path.0=classes.dex
+renamed.0=classes.dex

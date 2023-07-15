@@ -15,6 +15,10 @@ class CasoRepository {
   Future<Caso> inserir(Caso caso) async {
     return await api.inserir(caso);
   }
+
+  Future<String> consultaCep(String cep) async{
+    return  api.consultaCep(cep);
+  }
   // Future<Caso> alterar(Caso caso) async{return await api.alterar(caso);}
   // Future<Caso> remover(intid) async{return await api.remover(id);}
 
