@@ -31,14 +31,6 @@ class Menu extends StatelessWidget{
             },
           ),
           ListTile(
-            title: const Text('Casos'),
-            onTap: () {
-              Navigator.pop(context);
-              Navigator.pushNamed(context, AppRoutes.listaCasoDeOng);
-            },
-          ),
-
-          ListTile(
             title: const Text('cadastro de Casos'),
             onTap: () {
               Navigator.pop(context);
@@ -46,12 +38,28 @@ class Menu extends StatelessWidget{
             },
           ),
           ListTile(
-            title: const Text('Voluntarios'),
+            title: const Text('Cadastro de Voluntariados ou doações'),
             onTap: () {
               Navigator.pop(context);
-              Navigator.pushNamed(context, AppRoutes.home);
+              Navigator.pushNamed(context, AppRoutes.inserirservicoVoluntarioEDoacao);
             },
           ),
+          ListTile(
+            title: const Text('Lista de Casos'),
+            onTap: () {
+              Navigator.pop(context);
+              Navigator.pushNamed(context, AppRoutes.listaCasoDeOng);
+            },
+          ),
+
+          ListTile(
+            title: const Text('Lista de Voluntariados e doações'),
+            onTap: () {
+              Navigator.pop(context);
+              Navigator.pushNamed(context, AppRoutes.litarservicoVoluntarioEDoacoes);
+            },
+          ),
+
           ListTile(
             title: const Text('Sobre nós'),
             onTap: () {

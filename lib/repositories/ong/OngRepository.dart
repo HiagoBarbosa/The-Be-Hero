@@ -16,6 +16,10 @@ class OngRepository {
         return await api.inserir(ong);
     }
 
+    Future<String> consultaCep(String cep) async{
+        return  api.consultaCep(cep);
+    }
+
     //Future<Ong> alterar(Ong ong) async{
      //return await api.alterar(ong);
     //}

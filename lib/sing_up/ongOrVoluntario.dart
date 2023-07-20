@@ -143,7 +143,7 @@ class _SingUpPageOngOrVoluntario extends State<SingUpPageOngOrVoluntario> {
                       ],
                     ),
                     onPressed: ()async {
-                      //await Navigator.pushNamed(context, AppRoutes.SING_UP_ONG);
+                      await Navigator.pushNamed(context, AppRoutes.inserirVoluntario);
                     },
                   ),
                 ),

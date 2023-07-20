@@ -7,10 +7,10 @@ class Ong {
   String email;
   String cep;
   String rua;
-  int numero;
+  String numero;
   String comp;
-  int numFixo;
-  int numMobile;
+  String numFixo;
+  String numMobile;
   String descricao;
   String password;
   String image;

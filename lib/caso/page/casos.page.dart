@@ -18,7 +18,6 @@ class LitarCasosOng extends StatefulWidget {
 
 class _LitarCasosOngState extends State<LitarCasosOng>{
   List<Caso> _lista = <Caso>[];
-
   @override
   void initState(){
     super.initState();
@@ -38,37 +37,20 @@ class _LitarCasosOngState extends State<LitarCasosOng>{
     });
   }
 
-  Future<List<Caso>> _obterTodos() async{
+  Future<List<Caso>> _obterTodos() async {
     List<Caso> tempLista = <Caso>[];
-    try{
+    try {
       CasoRepository repository = CasoRepository();
       tempLista = await repository.buscarTodos();
     }
-    catch(exception){
+    catch (exception) {
       ScaffoldMessenger.of(context)
           .showSnackBar(SnackBar(content: Text('errorrrrr')));
     }
     return tempLista;
-      // Database db = await ConnectionCasoOngFactory.factory.database;
-      // casoOngDao dao = casoOngDao(db);
-      //
-      // List<Caso> tempLista = await dao.obterTodos();
-      //
-      // ConnectionCasoOngFactory.factory.close();
-      //
-      // return tempLista;
   }
-
-  //void _removerCaso(int id) async {
-   // Database db = await ConnectionCasoOngFactory.factory.database;
-   // casoOngDao dao = casoOngDao(db);
-   // await dao.remover(id);
-
-    //ConnectionCasoOngFactory.factory.close();
-  //}
-
   void _showItem(BuildContext context, int index){
-    ///vai ter uma pagina so para lista o caso especifico
+    Caso c = _lista[index];
 
   }
 
@@ -84,7 +66,7 @@ class _LitarCasosOngState extends State<LitarCasosOng>{
     Caso c  = _lista[index];
     showDialog(context: context, builder: (BuildContext context) => AlertDialog(
       title: Text("Remover caso"),
-      content: Text("Gostaria realmente de remover o caso ${c.nome} ?"),
+      content: Text("Gostaria realmente de remover o caso ${c.nomedocaso} ?"),
       actions: [
         TextButton(onPressed: () {Navigator.of(context).pop();}, child: Text("Não")),
         TextButton(onPressed: () {
@@ -105,31 +87,33 @@ class _LitarCasosOngState extends State<LitarCasosOng>{
         width: 60,
         height: 200,
         alignment: Alignment.topLeft,
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage(c.image),
-            fit: BoxFit.fitHeight,
-          ),
-        ),
+        // decoration: BoxDecoration(
+        //   image: DecorationImage(
+        //     image: AssetImage(c.image),
+        //     fit: BoxFit.fitHeight,
+        //   ),
+        // ),
       ),
-      title: Text(c.nome),
-      subtitle: Text(c.raca),
-      onTap: () {_showItem(context, index);},
-      trailing: PopupMenuButton(
-        itemBuilder: (BuildContext context) {
-          return [
-            PopupMenuItem(child: Text('Editar'), value: 'edit',),
-            PopupMenuItem(child: Text('Remover'), value: 'delete',)
-          ];
-        },
-        onSelected: (String value){
-          if(value == 'edit')
-            _editItem(context, index);
-            else
-            _removeItem(context, index);
-        },
-
-      ),
+      title: Text(c.nomedocaso),
+      subtitle: Text(c.nomeong),
+      onTap: () => print(Navigator.pushNamed(context, AppRoutes.listaCasoOngIdPage, arguments: <String, int>{
+        "id": c.id!
+      }))//{_showItem(context, index)},
+      // trailing: PopupMenuButton(
+      //   itemBuilder: (BuildContext context) {
+      //     return [
+      //       PopupMenuItem(child: Text('Editar'), value: 'edit',),
+      //       PopupMenuItem(child: Text('Remover'), value: 'delete',)
+      //     ];
+      //   },
+      //   onSelected: (String value){
+      //     if(value == 'edit')
+      //       _editItem(context, index);
+      //       else
+      //       _removeItem(context, index);
+      //   },
+      //
+      // ),
     );
   }
 

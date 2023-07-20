@@ -2,53 +2,98 @@ import 'dart:convert';
 
 class Caso{
   int? id;
-  String nome;
+  String nomedocaso;
+  String nomeong;
   String raca;
   String especie;
   String dta_recolhimento; ///alterar para date time... sop para concluir logo isso aqui
   String descricao;
   String image;
+  int cnpj;
+  String email;
+  int cep;
+  String rua;
+  int numero;
+  String comp;
+  int numFixo;
+  int numMobile;
 
   Caso(
       this.id,
-      this.nome,
+      this.nomedocaso,
+      this.nomeong,
       this.raca,
       this.especie,
       this.dta_recolhimento,
       this.descricao,
-      this.image
+      this.image,
+      this.cnpj,
+      this.email,
+      this.cep,
+      this.rua,
+      this.numero,
+      this.comp,
+      this.numFixo,
+      this.numMobile
       );
 
   Caso.novo(
-      this.nome,
+      this.nomedocaso,
+      this.nomeong,
       this.raca,
       this.especie,
       this.dta_recolhimento,
       this.descricao,
-      this.image
+      this.image,
+      this.cnpj,
+      this.email,
+      this.cep,
+      this.rua,
+      this.numero,
+      this.comp,
+      this.numFixo,
+      this.numMobile
       );
 
   Map<String, dynamic> toMap(){
     return {
       "id": this.id,
-      "nome": this.nome,
+      "nomedocaso": this.nomedocaso,
+      "nomedaong": this.nomeong,
       "raca": this.raca,
       "especie": this.especie,
       "dta_recolhimento": this.dta_recolhimento,
       "descricao": this.descricao,
-      "image": this.image
+      "image": this.image,
+      "cnpj": this.cnpj,
+      "email":this.email,
+      "cep":this.cep,
+      "rua":this.rua,
+      "numero": this.numero,
+      "comp": this.comp,
+      "numFixo":this.numFixo,
+      "numMobile":this.numMobile
     };
   }
 
   static Caso fromMap(Map<String, dynamic> map){
     return Caso(
       map['id'],
-      map['nome'],
+      map['nomedocaso'],
+      map['nomedaong'],
       map['raca'],
       map['especie'],
       map['dta_recolhimento'],
       map['descricao'],
       map['image'],
+      map['cnpj'],
+      map['email'],
+      map['cep'],
+      map['rua'],
+      map['numero'],
+      map['comp'],
+      map['numFixo'],
+      map['numMobile'],
     );
   }
 
